@@ -18,10 +18,6 @@ RUN pip3 install -r /tmp/requirements.txt && rm -r /tmp/requirements.txt
 
 # ports
 
-ENV PORT 8080
-
-EXPOSE 8080
-EXPOSE 80
 
 
 COPY . /code
