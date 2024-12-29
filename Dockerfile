@@ -16,6 +16,11 @@ RUN pip3 install -U pip && pip3 install -U wheel && pip3 install -U setuptools==
 COPY ./requirements.txt /tmp/requirements.txt
 RUN pip3 install -r /tmp/requirements.txt && rm -r /tmp/requirements.txt
 
+# ports
+EXPOSE 8080
+EXPOSE 80
+
+
 COPY . /code
 WORKDIR /code
 
